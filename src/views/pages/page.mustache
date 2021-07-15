@@ -14,4 +14,9 @@
         </div>
     {{ /list }}
 </div>
+{{ ^list }}
+    <div class="container no-list">
+        <h2>A busca não encontrou animais com estes termos! </h2>
+    </div>
+{{ /list }}
 {{ >partials/footer }}
