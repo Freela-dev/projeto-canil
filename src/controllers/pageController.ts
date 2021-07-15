@@ -1,21 +1,39 @@
 import { Request, Response } from 'express';
 
 export const home = ( req: Request, res: Response )=> {
-    res.send('home');
-   // res.render('pages/page');
+   
+   res.render('pages/page',{
+       banner:{
+           title: 'Todos os animais',
+            imgBackground: 'allanimals.jpg'
+       }
+   });
 }
 
 export const dogs = ( req: Request, res: Response )=> {
-    res.send('Dogs');
-   // res.render('pages/page');
+
+    res.render('pages/page',{
+        banner:{
+            title: 'Cachorros',
+             imgBackground: 'banner_dog.jpg'
+        }
+    });
 }
 
 export const cats = ( req: Request, res: Response )=> {
-    res.send('Cats');
-    // res.render('pages/page');
+    res.render('pages/page',{
+        banner:{
+            title: 'Gatos',
+             imgBackground: 'banner_cat.jpg'
+        }
+    });
 }
 
 export const fishes = ( req: Request, res: Response )=> {
-    res.send('Fishes');
-    // res.render('pages/page');
+    res.render('pages/page',{
+        banner:{
+            title: 'Peixes',
+             imgBackground: 'banner_fish.jpg'
+        }
+    });
 }

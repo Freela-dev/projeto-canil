@@ -1,7 +1,7 @@
 # Projeto Canil
 Projeto desenvolvido com as seguintes tecnologias:
 nodejs
-typescrit
+typescript
 express
 
 ### Pré-requsitos globais
