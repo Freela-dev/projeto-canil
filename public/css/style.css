@@ -95,6 +95,11 @@ h2 {
 .item {
     color: var(--lightbg);
 }
+
+.item a{
+    list-style: none;
+}
+
 .item--image {
     width: 100%;
     height: auto;
