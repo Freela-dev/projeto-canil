@@ -97,7 +97,8 @@ h2 {
 }
 
 .item a{
-    list-style: none;
+    text-decoration: none;
+    outline: none;
 }
 
 .item--image {
