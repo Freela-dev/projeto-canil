@@ -140,4 +140,24 @@ export const Pet = {
     getFromName: (name: string): Pet[] => {
         return data.filter(item => item.name.toLowerCase().indexOf(name.toLowerCase())>-1);
     },
+
+    createPet: (
+        type: string,
+        image: string,
+        name: string,
+        color: string,
+        sex: 'Masculino' | 'Feminino'
+        ) =>{
+
+            let pet: Pet;
+            pet = {
+            type: type,
+            image: image,
+            name: name,
+            color: color,
+            sex: sex
+        }
+
+            return data.push(pet);
+        }
 }

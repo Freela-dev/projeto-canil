@@ -15,7 +15,6 @@ export const home = ( req: Request, res: Response )=> {
        list
    });
 }
-
 export const dogs = ( req: Request, res: Response )=> {
     let list = Pet.getFromType('dog');
     res.render('pages/page',{
@@ -51,3 +50,8 @@ export const fishes = ( req: Request, res: Response )=> {
         list
     });
 }
+    export const post = ( req: Request, res: Response )=> {
+        Pet.createPet('cachorro', 'allanimals500.jpg','cão', 'verde', 'Feminino');
+        res.redirect('/');
+    }
+

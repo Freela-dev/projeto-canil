@@ -10,5 +10,6 @@ router.get('/cats', PageController.cats);
 router.get('/fishes', PageController.fishes);
 
 router.get('/search', SearchController.search);
+router.get('/post', PageController.post);
 
 export default router;
