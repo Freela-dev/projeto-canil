@@ -7,10 +7,12 @@
 <div class="container list">
     {{ #list }}
         <div class="item">
+            <a href="/search?q={{ name }}" rel="noopener noreferrer">
             <img src="images/{{ image }}" class="item--image" alt="{{ name }}" />
             <div class="item--name">{{ name }}</div>
             <div class="item--color">Cor: {{ color }}</div>
             <div class="item--genre">Gênero: {{ sex }}</div>
+        </a>
         </div>
     {{ /list }}
 </div>
